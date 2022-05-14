@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const {
- handlerAllReport,
+  handlerAllReport,
   handlerOneReport,
   handlerDeleteReport,
   handlerCreateReport,

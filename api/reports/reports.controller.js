@@ -51,7 +51,7 @@ async function handlerUpdateReport(req, res) {
   try {
     const report = await updateReport(id, body);
     console.log(report);
-    res.json({ message: `Informe ${tarea} actualizado con exito`, report });
+    res.json({ message: `Informe ${report} actualizado con exito`, report });
   } catch (error) {
     res.status(400).json({ message: 'Error al actualizar El informe' });
   }

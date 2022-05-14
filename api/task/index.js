@@ -3,8 +3,6 @@ const { Router } = require('express');
 const {
   handlerAllTask,
   handlerOneTask,
-  handlerDeleteTask,
-  handlerCreateTask,
   handlerUpdateTask,
 } = require('./task.controller');
 /* const { isAuthenticated, hasRole } = require('../../auth/auth.service'); */

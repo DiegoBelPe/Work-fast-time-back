@@ -20,12 +20,11 @@ async function deleteReport(id) {
   return report;
 }
 async function createReport(report) {
-  const newReport = await new ReportModel( report );
+  const newReport = await new ReportModel(report);
   return newReport.save();
 }
 function updateReport(id, report) {
   return ReportModel.findByIdAndUpdate(id, report, { new: true });
-
 }
 
 module.exports = {

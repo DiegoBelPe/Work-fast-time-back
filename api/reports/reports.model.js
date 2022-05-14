@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-
+const mongoose = require('mongoose');
 
 const ReportSchema = new mongoose.Schema(
   {
@@ -13,7 +12,7 @@ const ReportSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-  }
+  },
 );
 
-const ReportModel = mongoose.model("Report", ReportSchema);
+module.exports = mongoose.model('Report', ReportSchema);
