@@ -3,8 +3,8 @@
  */
  /* const healthcheck = require("./api/healthcheck"); */
  const task = require("./api/task");
-/*  const user = require("./api/user");
- const authLocal = require("./auth/local");
+ const user = require("./api/user");
+ /*const authLocal = require("./auth/local");
  const homework = require("./api/homerWork");
 
  const message = require("./api/message");
@@ -18,8 +18,8 @@
    // API Routes
   /*  app.use("/api/healthcheck", healthcheck); */
    app.use("/api/tasks", task);
-  /*  app.use("/api/users", user);
-   app.use("/api/tareas", homework);
+   app.use("/api/users", user);
+  /* app.use("/api/tareas", homework);
    app.use("/api/message", message);
    app.use("/api/student", student);
    app.use("/api/upload", upload);
