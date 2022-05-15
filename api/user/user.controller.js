@@ -2,6 +2,7 @@ const {
   createUser,
   getAllUser,
   getAllUserByEmail,
+  loginUser,
 } = require('./user.service');
 
 async function handlerCreateUser(req, res) {
@@ -20,6 +21,7 @@ async function handlerGetAllUserByEmail(req, res) {
   const user = await getAllUserByEmail.find({ email });
   res.status(201).json(user);
 }
+
 
 module.exports = {
   handlerCreateUser,
