@@ -1,5 +1,7 @@
 const {
   createUser,
+  getAllUser,
+  getAllUserByEmail,
 } = require('./user.service');
 
 async function handlerCreateUser(req, res) {
@@ -8,19 +10,19 @@ async function handlerCreateUser(req, res) {
   res.status(201).json(user);
 }
 
-/* async function handlerGetAllUser(req, res) {
-  const users = await UserModel.find();
+async function handlerGetAllUser(req, res) {
+  const users = await getAllUser.find();
   res.status(201).json(users);
 }
 
 async function handlerGetAllUserByEmail(req, res) {
   const { email } = req.body;
-  const user = await UserModel.find({ email });
+  const user = await getAllUserByEmail.find({ email });
   res.status(201).json(user);
-} */
+}
 
 module.exports = {
   handlerCreateUser,
-  /*  handlerGetAllUser,
-  handlerGetAllUserByEmail, */
+  handlerGetAllUser,
+  handlerGetAllUserByEmail,
 };
